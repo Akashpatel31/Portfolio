@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get User Media Code Along!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66f86b15e5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/konva@4.2.2/konva.min.js"></script>
+</head>
+<body>
+    <div class='containerOne'>
+        <div class='containerTwo'><br>
+            <ul class="lightrope">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <!-- <li></li>
+                <li></li>
+                <li></li> -->
+            </ul>
+    <header>
+        <h1 class="glow" style="color: white;">Photobooth</h1>
+    </header>
+    
+    <main>
+        <article id="feeds">
+            <div style="margin-left: 20px;">
+                <h2 style="color: white;">Original Feed</h2>
+                <video class="player"></video>
+            </div>
+            <div style="margin-left: 40px;">
+                <h2 style="color: white;">Effects Feed</h2>
+                <!-- <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"> -->
+                <canvas id="container" class="photo"></canvas>
+            </div>
+        </article>
+
+        <article id="controls" style="color: white;">
+            <form>
+                <h1 class="headingg greenCon">Green Screen Colour Range Selector</h1>
+                <fieldset class="rgb">
+                    <label for="rmin" style="margin-left: -160px;">Red Min:</label>
+                    <input id="rmin"  type="range" min=0 max=255 step="1" value="128" name="rmin">
+                    <output for="rmin" id="range-slider-value">128</output>
+                    <label for="rmax" style="margin-left: 250px;">Red Max:</label>
+                    <input id="rmax"  type="range" min=0 max=255 step="1" value="255" name="rmax">
+                    <output for="rmax" id="range-slider-value1">255</output>
+                </fieldset>
+                
+                <fieldset class="rgb">
+                    <label for="gmin" style="margin-left: -160px;">Green Min:</label>
+                    <input id="gmin"  type="range" min=0 max=255 step="1" value="190" name="gmin">
+                    <output for="gmin" id="range-slider-value2">190</output>
+                    <label for="gmax" style="margin-left: 230px;">Green Max:</label>
+                    <input id="gmax"  type="range" min=0 max=255 step="1" value="255" name="gmax">
+                    <output for="gmax" id="range-slider-value3">255</output>
+                </fieldset>
+                
+                <fieldset class="rgb">
+                    <label for="bmin" style="margin-left: -160px;">Blue Min:</label>
+                    <input id="bmin" type="range" min=0 max=255 step="1" value="128" name="bmin">
+                    <output for="bmin" id="range-slider-value4">128</output>
+                    <label for="bmax" style="margin-left: 250px;">Blue Max:</label>
+                    <input id="bmax" type="range" min=0 max=255 step="1" value="255" name="bmax">
+                    <output for="bmax" id="range-slider-value5">255</output>
+                </fieldset><br>
+                <fieldset>
+                    <h1 class="headingg">Effects Selection</h1>
+                    <div class="filterBtn">
+                        <div class="col-md-3 col-sm-3 col-xs-6 shadow" style="margin-left: 100px;width: 150px !important; margin-top: -140px;"> <a href="#" id="greenScreenEffect" class="btn btn-sm animated-button thar-two" value="green screen filter">green screen</a> </div><br><br>
+                        <div class="col-md-3 col-sm-3 col-xs-6 shadow" style="margin-left: -300px;width: 150px !important;"> <a href="#" id="ghostEffect" class="btn btn-sm animated-button thar-two" value="invert filter">invert filter</a> </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 shadow" style="margin-left: -120px;width: 150px !important; margin-top: -80px;"> <a href="#" id="redEffect" class="btn btn-sm animated-button thar-two" value="red filter">red filter</a> </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 shadow" style="margin-left: 70px; width: 150px !important; margin-top: -80px;"> <a href="#" id="splitEffect" class="btn btn-sm animated-button thar-two" value="split filter">split filter</a> </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 shadow" style="margin-left: 250px; width: 180px !important; margin-top: -80px;"> <a href="#" id="horizontalEffect" class="btn btn-sm animated-button thar-two" value="split filter">horizontal flip</a> </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 shadow" style="margin-left: 450px;width: 150px !important; margin-top: -80px;"> <a href="#" id="verticalEffect" class="btn btn-sm animated-button thar-two" value="vertical flip">vertical flip</a> </div>
+                        <!-- <input type="button" id="ghostEffect" class="btn btn-gradient red large" value="invert filter"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                        <!-- <input type="button" id="redEffect" class="btn btn-gradient red large" value="red filter">&nbsp; -->
+                        <!-- <input type="button" id="splitEffect" class="btn btn-gradient red large" value="split filter">&nbsp; -->
+                        <!-- <input type="button" id="greenScreenEffect" class="btn btn-gradient red large" value="green screen">&nbsp; -->
+                        <!-- <input type="button" id="horizontalEffect" class="btn btn-gradient red large" value="horizontal flip ">&nbsp;
+                        <input type="button" id="verticalEffect" class="btn btn-gradient red large" value="vertical flip ">&nbsp; -->
+                        
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    <div class="takePic">
+        <!-- <button id="camButton" data-title="TakePhoto">TakePhoto</button> -->
+        <div class="shadow" id="camButton" class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button thar-four" data-title="TakePhoto">TakePhoto</a> </div>
+    <div class="strip scroll"></div>
+</div>
+<!-- <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> -->
+<!-- </div> -->
+<br><h1 id="decal" style="color: white">Decal Placement</h1>
+<div id="drag-items" class="dragItems">
+    <img src="images/partyitems2.jpg"  draggable="true"  style="height: 100px; width: 100px;">
+    <img src="images/partyItem1.jpeg"  draggable="true" style="height: 100px; width: 100px;" > 
+    <img src="images/partyimage3.jpeg" draggable="true" style="height: 100px; width: 100px;" > 
+    <img src="images/partimage4.png"   draggable="true" style="height: 100px; width: 100px;" > 
+    <!-- ondragstart="drag(event)" id="drag1" width="88" height="31"> -->
+    </div>
+<!-- <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+    <audio class="snap" src="snap.mp3"></audio>
+    </div>
+    </div>
+    <script src="scripts.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body{
+    background-color:lightyellow;
+}
+
+header, footer {
+    width: 100wv;
+    height: 60px;
+}
+
+main {
+    width: 100vw;
+}
+
+
+.min-height-60 {
+    min-height: 60px;
+}
+
+.min-height-180 {
+    min-height: 180px;
+}
+
+.min-height-360 {
+    min-height: 360px;
+}
+
+.min-height-540 {
+    min-height: 540px;
+}
+#headContent{
+    background-color: lightblue;
+}
+.footertxt{
+    color: white;
+    margin-top: 20px;
+}
+
+.con{
+    margin-top: 10px;
+}
+body{
+    background-color: #e2dfdf;
+}
+.topWatched{
+    background-color: #3f464b;
+}
+
+#footerColor{
+    background-color: black;
+    text-align: center;
+}
+
+.relContent{
+    text-align: center;
+    margin-top: 10px;
+    background-color: lightblue;
+
+}
+
+/*
+.responsive {
+    width: 150px !important;
+    height: 150px !important;
+ }
+*/
+
+
+ .contentData{
+    margin-top: 35px;
+}
+
+#searchImg{
+    position: absolute;
+    left: 53%;
+}
+
+.quickLinks{
+    text-align: center;
+    color: white;
+}
+
+#searchText{
+    float: left;
+}
+
+.headerCons{
+    background-color: #3f464b;
+    color: white;
+    font-size: 25px;
+    right: 20% !important;
+
+}
+.mainDiv{
+    background-color: #ebebeb;
+}
+.imgcontent{
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.imgPoster{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.imgcontentdes{
+    margin-top: 20px;   
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.imgcast,.imgrel,.imgRedmovie{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:500px) {
+    .logo {
+        top: 20% !important;
+/*
+        width: 150px !important;
+        height: 150px !important;
+*/
+        margin-left: 35%;
+        margin-top: -30px !important;
+     }
+      #searchText{
+          width: 277px;
+          height: 20px;
+          margin-left: 25%;
+      }
+      #searchImg{
+          width: 20px;
+          height: 20px;
+          margin-left: 25%;
+      }
+      #quickLinks{
+          font-size: 10px;
+          margin-top: -5px;
+
+      }
+      .mainGrid{
+          margin-top: 123px;;
+      }
+  }
+

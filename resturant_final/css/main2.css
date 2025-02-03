@@ -1,0 +1,621 @@
+/* RESET CSS ////////////////////////////////////////// */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTS /////////////////////////////////////////////// */
+
+/* app font */
+@font-face {
+    font-family: "AppFont";
+    src: url(fonts/Attractive-Regular.otf);
+}
+
+/* restaurant 1 fonts */
+@font-face {
+    font-family: "Rest1FontTitle";
+    src: url(fonts/HammersmithOne.ttf);
+}
+
+@font-face {
+    font-family: "Rest1FontBody";
+    src: url(fonts/Quicksand-Regular.otf);
+}
+
+@font-face {
+    font-family: "Rest1FontBodyBold";
+    src: url(fonts/Quicksand-Bold.otf);
+}
+
+/* GENRAL APP STYLES /////////////////////////////////// */
+
+body {
+    font-size: 14px;
+    overflow: hidden;
+    align-content: center !important;
+}
+
+main {
+    position: absolute;
+    width: 375px;
+    height: 667px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    width: 375px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+}
+
+section {
+    position: absolute;
+    top: 60px;
+    width: 375px;
+    height: 547px;
+    background: #FFF;
+    overflow: auto;
+    padding: 10px;
+}
+
+footer {
+    width: 375px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+	color: white;
+}
+
+/* SPLASH SCREEN ////////////////////////////////////////// */
+
+#splash {
+   	background-color:black !important;
+    background-size: cover;
+}
+
+#splash header {
+    font-family: "AppFont", sans-serif;
+    border-bottom: solid 5px #FFF;
+    background: orange ;
+    font-size: 35px;
+    color: #FFF;
+    padding: 20px;
+    height: 90px;
+    text-align: center;
+}
+
+#splash img {
+    position: absolute;
+    left: 50%;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+	margin-bottom: 50px;
+}
+
+#splash footer {
+    height: 20px;
+    background: black;
+}
+
+/* LANDING SCREEN ///////////////////////////////////////// */
+
+#landing {
+    font-family: "AppFont", sans-serif;
+    background-size: cover;
+    padding-top: 130px;
+}
+
+#landing header {
+    border-bottom: solid 5px #FFF;
+    /* background: #4f3000; */
+    color: #FFF;
+    height: 103px;
+    padding: 20px;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: right;
+}
+
+#landing header img {
+    margin-top: -5%;
+    width: 110px !important;
+    height: 110px !important;
+}
+
+/* .landingLogos { */
+    /* position: relative; */
+    /* border: dotted 1px #342000; */
+    /* padding-top: 10px;
+    margin: 10px;
+    text-align: center;
+} */
+
+/* .landingLogos:nth-child(4) {
+    padding: 20px;
+} */
+
+.fineDining {
+    position: absolute;
+    width: 125px;
+    height: auto;
+    right: -8px;
+    top: 15px;
+}
+#Ceviche{
+	height:180px;
+    width:200px;
+    margin-top: -10px !important;
+}
+
+.casualDining {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    left: -8px;
+    top: 15px;
+}
+#Wines{
+	height: 150px;
+	width:200px; 
+}
+
+.fastFoodDining {
+    position: absolute;
+    width: 172px;
+    height: auto;
+    right: -8px;
+    top: 15px;
+}
+#Crispy{
+    margin-top: -30px !important;
+	height:200px;
+	width:200px;
+}
+
+.crispy {
+    width: 250px;
+    height: auto;
+}
+
+#landing footer {
+    height: 15px;
+    background: black;
+}
+
+/* MENU ////////////////////////////////////////////// */
+
+
+
+/* SHARED RESTAURANT /////////////////////////////////// */
+
+/* header/footer */
+
+header img {
+    width: 35px;
+    height: auto;
+    float: left;
+    
+}
+
+header h1 {
+    color: #FFF;
+    margin-left: 70px !important;
+}
+
+footer div {
+    float: left;
+    text-align: center;
+    overflow: auto;
+    font-size: 12px;
+    padding: 10px;
+    color:black;
+}
+
+footer img {
+    height: 25px;
+    width: auto;
+}
+
+/* general section */
+.sectionContainer {
+    /* border: dotted 1px #000; */
+    text-align: center;
+    overflow: auto;
+    color: #000;
+}
+
+/* home section */
+.photoAddress {
+    padding: 0 15px;
+    text-align: left;
+}
+
+.homeImg {
+    width: 148px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+.photoAddress h2 {
+    line-height: 80%;
+    margin-bottom: 5px;
+}
+
+.photoAddress p {
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.rating {
+    width: 100px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.photoCount {
+    border: solid 1px #000;
+    padding: 1px;
+    text-align: center;
+    width: 148px;
+    margin-top: -15px;
+}
+
+.hours {
+    margin-top: 20px;
+}
+
+.hours h2 {
+    border-bottom: solid 1px #000;
+    width: 210px;
+}
+
+.hours p {
+    margin-top: 5px;
+}
+
+.reviews {
+    margin: 20px;
+}
+
+.profile {
+    text-align: left;
+    border-bottom: solid 1px #000;
+    overflow: auto;
+    padding-bottom: 15px;
+}
+
+.profile img {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+.profile p:last-child {
+    margin-top: 5px;
+}
+
+.reviews p:last-child {
+    text-align: left;
+    margin-top: 10px;   
+}
+h1{
+    font-family: sans-serif !important;
+}
+
+/* general specials/reservations */
+
+
+/* specials section */
+
+
+/* reservations section */
+
+
+/* RESTAURANT 1 ////////////////////////////////////// */
+
+/* general */
+#rest1 {
+    font-family: "Rest1FontBody", sans-serif;
+}
+
+/* general section */
+#rest1 .sectionContainer {
+    border-bottom-color: #342000;
+}
+
+#rest1 .profileBold {
+    font-family: "Rest1FontBodyBold", sans-serif;
+}
+
+/* header/footer */
+#rest1 header {
+    font-family: "Rest1FontTitle", sans-serif;
+    background: green;
+    border-bottom: solid 5px greenyellow;
+}
+
+#rest1 footer {
+    background:green;
+}
+
+/* footer subnav */
+#rest1 .homeIcon {
+    margin-left: 55px;
+}
+
+#rest1 .specialsIcon {
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+#rest1 .logo {
+    width: 80%;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* home */
+#rest1 .bar {
+    background: #b0d461;
+    padding: 3px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#rest1 h2 {
+    font-family: "Rest1FontTitle", sans-serif;
+}
+
+#rest1 .photoCount {
+    border-color: #569772;
+}
+
+#rest1 .hours h2 {
+    color: #177535;
+    border-bottom-color: #177535;
+}
+
+#rest1 .hours p {
+    color: #7fc193;
+}
+
+#rest1 .profile {
+    border-bottom-color: #177535;
+}
+#splash h1{
+	margin-top: 450px;
+}
+#icon{
+	margin-top: 0px;
+}
+#imgSide{
+    height: 250px;
+    width: 350px;
+    margin-left: -25px;
+}
+#imgside1{
+    height: 200px !important;
+    width: 350px !important;
+    margin-left: -15px !important;
+}
+#imgside3{
+    height: 250px !important;
+    width: 350px !important;
+    margin-left: -25px !important;
+}
+#headpara{
+    color: black;
+    padding-right: 5% !important;
+}
+#headerLand{
+    background-color: lightyellow;
+}
+#CevicheBar{
+
+    /* background-color: gray; */
+    color: black;
+    margin-top: 30px;
+    padding-bottom: 2.5%;
+}
+.special01{
+    /* background-color: rgba(110, 110, 110, 0.698); */
+    float: left;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.special01 img{
+    margin-bottom: 10px;
+    width: 100vw;
+    /* float: left; */
+    margin-left: -15px;
+    border-radius: 10px;
+}
+
+.special01 h2{
+    padding: 10px;
+    font-size:20px;
+    float: left;
+    margin-bottom:10px;
+}
+.special01 h3{
+    padding: 10px;
+    font-size:20px;
+    float: right;
+    margin-bottom:10px;
+}
+
+.special01 p{
+    text-align: left;
+    margin-top: 10px;
+    color: black;
+    font-size:15px;
+    float: right;
+    text-transform: capitalize;
+}
+
+/* Special 02 */ 
+
+.special02{
+    
+    float: left;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.special02 img{
+    margin-bottom: 10px;
+    width: 100vw;
+    /* float: left; */
+    margin-left: -15px;
+    border-radius: 10px;
+}
+.special02C img{
+    margin-bottom: 10px;
+    width: 100vw;
+    /* float: left; */
+    margin-left: -10px;
+    border-radius: 10px;
+    height: 210px !important;
+}
+.special02 h2{
+    padding: 10px;
+    font-size:20px;
+    float: left;
+    margin-bottom:10px;
+}
+
+.special02 h3{
+    padding: 10px;
+    font-size:20px;
+    float: right;
+    margin-bottom:10px;
+}
+
+.special02 p{
+    text-align: left;
+    margin-top: 10px;
+    color: black;
+    font-size:15px;
+    float: right;
+    text-transform: capitalize;
+}
+
+/* Special 03 */ 
+
+.special03{
+    
+    float: left;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.special03 img{
+    margin-bottom: 10px;
+    width: 100vw;
+    /* float: left; */
+    margin-left: -15px;
+    border-radius: 10px;
+    /* height: 200px; */
+}
+.special03C img{
+    margin-bottom: 10px;
+    width: 100vw;
+    /* float: left; */
+    margin-left: -10px;
+    border-radius: 10px;
+    height: 250px !important;
+}
+
+.special03 h2{
+    padding: 10px;
+    font-size:20px;
+    float: left;
+    margin-bottom:10px;
+}
+
+.special03 h3{
+    padding: 10px;
+    font-size:20px;
+    float: right;
+    margin-bottom:10px;
+}
+
+.special03 p{
+    margin-right: 30px;
+    text-align: left;
+    margin-top: 10px;
+    color: black;
+    font-size:15px;
+    float: right;
+    text-transform: capitalize;
+}
+
+/* Special 04 */ 
+
+.special04{
+    
+    float: left;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.special04 img{
+    margin-bottom: 10px;
+    width: 100vw;
+    /* float: left; */
+    margin-left: -15px;
+    border-radius: 10px;
+    height: 210px;
+}
+.special04C img{
+    margin-bottom: 10px;
+    width: 100vw;
+    /* float: left; */
+    margin-left: -15px;
+    border-radius: 10px;
+    height: 250px !important;
+}
+.special04 h2{
+    padding: 10px;
+    font-size:20px;
+    float: left;
+    margin-bottom:10px;
+}
+
+.special04 h3{
+    padding: 10px;
+    font-size:20px;
+    float: right;
+    margin-bottom:10px;
+}
+
+.special04 p{
+    text-align: left;
+    margin-top: 10px;
+    color: black;
+    font-size:15px;
+    float: right;
+    text-transform: capitalize;
+}
+.specials{
+    background-color: lightgrey;
+}
+#boil{
+    margin-right: 15%;
+}
+/* general specials/reservations */
+
+
+/* specials */
+
+
+/* reservations */

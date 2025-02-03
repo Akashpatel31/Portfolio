@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: white;
+	background-color: black;
+	background-size: cover;
+}
+
+body {
+    width: 100%;
+}
+
+
+
+#logo {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+}
+
+
+#links {
+    text-align: center;
+}
+
+a {
+	display: block;
+    font-size: 30px;
+	margin-bottom: 15px;
+	color: rgb(0, 0, 0);
+	font-weight: 800;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: rgb(120, 120, 120);
+}
+.MainComp{
+	color: white;
+}
+#madMovieLogo{
+	right:10px;
+}

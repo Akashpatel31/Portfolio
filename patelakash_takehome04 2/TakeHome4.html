@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TakeHome4</title>
+<link rel="stylesheet" type="text/css" href="takeHome.css">
+<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color:#e27620; ">	
+	<div style="height:700px; width:700px; background-color: #85dcb8; margin-left:350px; margin-top:25px;">
+	<!-- <div id="firstPage"> -->
+	<!-- <center> -->
+	<div id="mainDiv" style="margin-left: 225px; padding-top: 110px;">
+	<img src="images/powerball.png"/>
+	<br>
+		<h2>Pick the numbers for you?</h2>
+		<input type="radio" name="radio" id="Autopick" value="Yes" checked/> &nbsp; Yes <br><br><br>
+		<input type="radio" name="radio" id="Manual" value="No"/> &nbsp; No <br/><br>
+</div>
+
+<!-- <input class="button" type="button" style="padding: 5px 25px;color: white;font-size: 20px;" id="PlayLotto" value="Play Lotto"/> -->
+
+<!-- </center> -->
+<!-- </div> -->
+	<!-- <div id="Input" style="margin-left: 200px;padding-top: 100px; background-color: #85dcb8;"> -->
+    <!-- <h4 style="color: blue">Pick the numbers for you?</h4>
+			
+			<input type="radio" name="radio" id="Autopick" value="Yes" checked/> &nbsp; Yes 
+			<input type="radio" name="radio" id="Manual" value="No"/> &nbsp; No <br/> -->
+			
+			<div id="Input" class="secdiv" style="color: white; background-color: #85dcb8;"></div>
+				<center>	
+					<h1 style="color: #F9D24B">Select six numbers of your choice</h1>
+					<span  onclick="changeClrAct(this)" class="numberCircle">&nbsp;1&nbsp;</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">&nbsp;2&nbsp;</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">&nbsp;3&nbsp;</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">&nbsp;4&nbsp;</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">&nbsp;5&nbsp;</span>
+					
+					<br/><br/>
+	
+					<span  onclick="changeClrAct(this)" class="numberCircle">&nbsp;6&nbsp;</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">&nbsp;7&nbsp;</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">&nbsp;8&nbsp;</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">&nbsp;9&nbsp;</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">10</span><br/><br/>
+	
+					<span  onclick="changeClrAct(this)" class="numberCircle">11</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">12</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">13</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">14</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">15</span><br/><br/>
+	
+					<span  onclick="changeClrAct(this)" class="numberCircle">16</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">17</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">18</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">19</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">20</span><br/><br/>
+	
+	
+					<span  onclick="changeClrAct(this)" class="numberCircle">21</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">22</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">23</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">24</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">25</span><br/><br/>
+	
+	
+					<span  onclick="changeClrAct(this)" class="numberCircle">26</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">27</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">28</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">29</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">30</span><br/><br/>
+	
+	
+					<span  onclick="changeClrAct(this)" class="numberCircle">31</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">32</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">33</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">34</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">35</span><br/><br/>
+	
+	
+					<span  onclick="changeClrAct(this)" class="numberCircle">36</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">37</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">38</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">39</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">40</span><br/><br/>
+	
+					<span  onclick="changeClrAct(this)" class="numberCircle">41</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">42</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">43</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">44</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">45</span><br/><br/>
+	
+					<span  onclick="changeClrAct(this)" class="numberCircle">46</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">47</span>
+					<span  onclick="changeClrAct(this)" class="numberCircle">48</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">49</span>
+					<span onclick="changeClrAct(this)" class="numberCircle">50</span><br/><br/>
+					</center>
+	<div id="Output" style="margin-left: 220px;background-color: #85dcb8;">
+			<div id="showDate"><p id="drawDate" style="padding-top: 30px; font-size: larger;     margin-left: -100px;"></p></div>
+			<div id="ShowAuto" style="margin-top: 70px;font-size: larger;    margin-left: -100px;"></div>
+			<p id="Selectionradio" style="margin-top: 50px;font-size: larger; margin-left: -100px;"></p>
+			<div id="ShowManual" style="margin-top: 50px;font-size: larger;     margin-left: -100px;"></div>
+			<p id="Outcome" style="margin-top: 70px;font-size: larger;     margin-left: -100px;"></p>
+	</div>
+	<h1 id="error1" style="margin-left: 150px;"></h1>
+		<h1 id="error2"style="margin-left: 150px;"></h1>
+	<button class="button" id="PlayLotto" style="padding: 5px 25px;color: white;font-size: 20px;margin-left: 225px;" ><span>Play Lotto </span></button>
+</div>
+
+	<script src="TakeHome4.js"></script>
+	</body>
+</html>

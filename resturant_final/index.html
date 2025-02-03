@@ -1,0 +1,582 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <!-- meta tag to make sure content is same width as device and not scalabl -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>Project 02 Framework</title>
+    
+    <!-- link to css files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+    <!-- link to js files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+</head>
+
+<body><center>
+    <!-- MENU -->
+    <main id="menu">
+        <header>FAMILY OF EATERIES</header>
+        <div id="backToLanding" class="menuBtn"><img src="img/landing_icon.svg" alt="Home" /><span>Select a New Restaurant</span></div>
+        <div id="contact" class="menuBtn"><img class="contactIcon" src="img/contact_icon.svg" alt="Contact" /><span>Contact Family of Eateries</span><p id="contac">
+            <br/><div id="Contactus" class="Contactus" style="color: black;"><br>
+                <p id="website1" style="margin-right: 60px"></p><br>
+                <p id="phoneNo1" style="margin-right: 60px"></p>
+            </div>
+        </p></div>
+    </main>
+    <!-- SPLASH SCREEN -->
+    <main id="splash">
+        <header>FAMILY OF EATERIES</header>
+        <img  class="mainimg" src="img/logoUpdated.png" alt="Family of Eateries"/>
+        <!-- <center><h1 id="maincontent">
+		Never eat 
+		in a restaurant that has a
+        bowling trophy on the 
+		cash register.
+		</h1></center> -->
+		&nbsp;
+    <center><footer>Copyright@Author 2018</footer></center>
+    </main>
+    <!-- LANDNG SCREEN -->
+    <main id="landing">
+        <header id="headerLand">
+            <img src="img/logoUpdated.png" alt="Family of Eateries" id="mainlogo"/>
+            <p id="headpara">SELECT A RESTAURANT</p>
+        </header>
+        <div id="logo1" class="landingLogos">
+        <img src="img/ceviche 2.png" alt="Ceviche" id="Ceviche"/>
+        </div>
+        <div id="logo2" class="landingLogos">
+            <img src="img/fivevines.png" alt="5 Wine" id="Wines"/>
+        </div>
+        <div id="logo3" class="landingLogos">
+            <img class="crispy" src="img/crispylogo.png" alt="Crispy" id= "Crispy"/>
+        </div>
+    <center><footer>Copyright@Author 2018</footer></center> 
+    </main>
+    <!-- RESTAURANT 1 -->
+    <main id="rest1" class="rest">
+        <!-- header -->
+        <header>
+            <img class="hamburger" data-click-state="1" src="img/hamburger.gif" alt="Menu" />
+            <h1>Ceviche</h1>
+        </header>
+        <!-- home -->
+        <section class="home">
+            <div class="sectionContainer">
+                <div id="logo2" class="landingLogos">
+                    <img src="img/ceviche 2.png" alt="Ceviche" id="Ceviche"/>
+                    </div>
+                    <!-- <div id="CevicheBar">
+                <h1>FINE DINING</h1>
+                    </div> -->
+                <!-- <div class="photoAddress reveal">&nbsp; 
+                <img class="homeImg" src="img/havana-tropical-grill.jpg"/>&nbsp; 
+                    <h2>CEVICHE</h2> -->
+                    
+                </div><br> 
+                <div class="reviews reveal">
+                    <h2>About</h2>
+                    <img id="imgSide" src="img/Ceviche-Mixto-.jpg"/>
+                        <p>Ceviche is both the name of Peru’s national dish and our first restaurant, 
+                            which went on to kick-start the Peruvian food revolution in London.
+                        </p><br>
+                        <h3>152 Rue Napoléon,<br>
+                            Montreal, QC<br>
+                            H2W1K8 CANADA</h3>
+                            <center><div class="hours reveal">
+                    <h2 style="color: black !important">OPENING HOURS</h2>
+                    <p>HOURS TODAY - 10:00 TO 23:00</p></center>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- specials -->
+        <section class="specials">
+            <div class="sectionHeading"><h1>SPECIALS</h1></div>
+            <div class="sectionArea">
+                <div class="special01 reveal">
+                    <h2>Seafood Spaghetti</h2>
+                    <h3>$8.99</h3>
+                    <img class="special01" src="images/seafood1.jpg" alt="special01" />
+
+                        <p>Spaghetti,butter,shrimp, peeled and deveined,scallops, patted dry and<br> Kosher salt</p>
+                </div>
+
+                <br/>
+                <br/>
+
+                <div class="special02 reveal">
+                        <h2>Cevice Boil</h2>
+                        <h3>$7.99</h3>
+                        <img class="special02" src="images/seafood2.jpg" alt="special02" />   
+                        <p id="boil">Mud crabs, Crayfish,Marron,Yabbies,<br>Bay bugs</p>
+                </div>
+
+                <div class="special03 reveal">
+                    <h2>Ceviche Specoal Platter</h2>
+                    <h3>$8.45</h3>
+                    <img class="special03" src="images/seafood3.jpeg" alt="special01" />  
+                        <p>Kosher salt, freshly ground black pepper,lobster tails,unsalted butter</p>
+                </div>
+
+                <div class="special04 reveal">
+                        <h2>Cevice Special Seolle</h2>
+                        <h3>$8.40</h3>
+                        <img class="special04" src="images/seafood4.jpg" alt="special01" />
+                        <p>olive oil,chicken thighs ,chorizo sausages, salt 
+                        </p>
+                </div>
+            
+            </div>
+        </section>
+        <!-- reservations -->
+        <section class="reservations">
+            
+            <h1>RESERVATIONS</h1>
+        
+            <div class="sectionContainer">
+                <h2 class="reveal">Fill in the form below</h2>
+                <p class="reveal">* required</p>
+                <form style="font-family: 'Bitter', serif;">
+                        <div class="form">
+                            <div class="form-row ">
+                                
+                                <div class="col">
+                                    <p class="reveal">
+                                <label>First Name:</label>
+                                        <input type="text" class="form-control" placeholder="First name"></p>
+                                </div>
+                                
+                                <div class="col">
+                                <label class="reveal">Last Name:</label>
+
+                                <input type="text" class="reveal" placeholder="Last name">
+                                </div>
+                            </div>
+                                <div class="form-row " >
+                                    <div class="form-group col-md-6">
+                                    <p class="reveal"> <label for="inputPassword4">Phone</label>
+                                        <input type="number" class="form-control" placeholder="123456789"></p>
+                                        <p class="reveal">
+                                            <label for="date">Date</label>
+                                            <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <p class="reveal"><label for="guests">Time</label>
+                                    <select id="Time" class="form-control">
+                                        <option selected>--Select--</option>
+                                        <option>5:00</option>
+                                        <option>6:00</option>
+                                        <option>7:00</option>
+                                        <option>8:00</option>
+                                        <option>9:00</option>
+                                        </select></p>
+                                    </div>
+                                
+                                    <div class="form-group col-md-4">
+                                    <p class="reveal"> <label for="guests">Number of Guests</label>
+                                    <select id="guests" class="form-control">
+                                        <option selected>--Select--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        </select></p>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <br/>
+                                
+                        <input type="button" value="Submit" class="reserve" style="color: black;"/>
+                </div> 
+                    <div class="confirmation">
+                    <input type="button" value="Confirm" class="button1"/>
+                    <input type="button" value="Cancel" class="button"/>
+                    </div>
+                    <h2 class="confirmA">Your confirmation is successful.</h2>
+                            </form>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="homeIcon" data-section=".home">
+                <img src="img/home.png" alt="Home"/>
+                <p>Home</p>
+            </div>
+            <div class="specialsIcon" data-section=".specials">
+                <img src="img/specials.png" alt="Specials" />
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <img src="img/reservation.png" alt="Reservations" />
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    <!-- RESTAURANT 2 -->
+    <main id="rest2" class="rest">
+        <!-- header -->
+        <header>
+            <img class="hamburger" data-click-state="1" src="img/hamburger.gif" alt="Menu" />
+            <h1>Five Wine</h1>
+        </header>
+        <!-- home -->
+        <section class="home">
+            <div class="sectionContainer">
+                <div id="logo2" class="landingLogos">
+                    <img src="img/fivevines.png" alt="5 Wine" id="Wines"/>
+                </div>
+                <!-- <h1>CASUAL DINING</h1><br>
+                <div class="photoAddress reveal"> -->
+                    <!-- <img class="homeImg" src="img/05-five-vines-wine-san-juan-capistrano-california-YELPWINE0118.jpg" alt="Home" />
+                    <h2>FIVE WINE</h2> -->
+                    <!-- <p>218 12 Ave SE,<br>
+                        Calgary, AB<br>
+                        T2G 1G9 CANADA</p>
+                    <div class="photoCount">15 PHOTOS</div> -->
+                </div>
+                <h2 style="font-weight: bold !important;">About</h2>
+                <img id="imgside1" src="img/ls.jpg"/>
+                    <p>Welcome to 5 Vines Wine, Craft Beer and Spirits. We host Calgary’s most unique liquor store experience and specialize in delicious wine and craft beer pairings. </p>
+                    <br><h3>218 12 Ave SE,<br>
+                        Calgary, AB<br>
+                        T2G 1G9 CANADA</h3>
+                <div class="hours reveal">
+                    <h2 style="color: black !important">OPENING HOURS</h2>
+                    <center><p style="color: black !important"> HOURS TODAY - 9:00 TO 22:00</p></center>
+                </div>
+                <div class="reviews reveal">
+                    
+                </div>
+            </div>
+        </section>
+        <!-- specials -->
+        <section class="specials">
+            <div class="sectionHeading"><h1> SPECIALS </h1></div>
+            <div class="sectionArea">
+                <div class="special01 reveal">
+                    <h2>Chardonnay, Simi</h2>
+                    <h3>$ 12.67</h3>
+                    <img class="special01" src="images/drink1.jpg" alt="special01" />   
+                    <p>Oat base (water, oats 10%), rapeseed oil, calcium carbonate, calcium phosphates, iodised salt, vitamins (D2, riboflavin, B12).</p>
+                </div>
+    
+                <div class="special02 reveal">
+                        <h2>Blend, Orvieto Classico</h2>
+                        <h3>$ 5.99</h3>
+                        <img class="special02" src="images/drink2.jpg" alt="special02" />   
+                        <p>Water, High Fructose Corn Syrup, And Less Than 2% Of: Concentrated Juices (apple, Clarified Pineapple, Passionfruit, Orange)</p>
+                </div>
+    
+                <div class="special03 reveal">
+                    <h2>Pinot Noir, Jackson Estate,<br>Anderson Valley, <br> toast</h2>
+                    <h3>$10.75</h3>
+                    <img class="special03" src="images/drink3.jpg" alt="special01" />   
+                    <p>caffeine, taurine, glucuronolactone, B vitamins, guarana, ginseng, ginkgo biloba, l-carnitine, sugars, antioxidants, and trace minerals.</p>
+                </div>
+    
+                <div class="special04 reveal">
+                    <h2>pinot grigio santa margherita</h2>
+                    <h3>$5.20   </h3>
+                    <img class="special04" src="images/drink4.jpeg" alt="special01" />
+                    <p>Carbonated Water, Taurine, Natural Flavors, Malic Acid, Citric Acid, Sodium Citrate, Green Tea Extractives, Caffeine, Benzoic Acid</p>
+                </div>
+            
+            </div>
+        </section>
+    
+        <!-- reservations -->
+        <section class="reservations">
+            <h1>RESERVATIONS</h1>
+            <div class="sectionContainer">
+                <h2 class="reveal">Fill in the form below</h2>
+                <p class="reveal">* required</p>
+                <form style="font-family: 'Bitter', serif;">
+                        <div class="form">
+                            <div class="form-row ">
+                            
+                                <div class="col">
+                                    <p class="reveal">
+                                <label>First Name:</label>
+                                        <input type="text" class="form-control" placeholder="First name"></p>
+                                </div>
+                                
+                                <div class="col">
+                                <label class="reveal">Last Name:</label>
+
+                                <input type="text" class="reveal" placeholder="Last name">
+                                </div>
+                        </div>
+                                <div class="form-row " >
+                                    <div class="form-group col-md-6">
+                                     <p class="reveal"> <label for="inputPassword4">Phone</label>
+                                         <input type="number" class="form-control" placeholder="123456789"></p>
+                                         <p class="reveal">
+                                             <label for="date">Date</label>
+                                            <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                                        </p>
+                                    </div>
+                                  </div>
+                                <div class="form-row">
+                                <div class="form-group col-md-4">
+                                      <p class="reveal"><label for="guests">Time</label>
+                                      <select id="Time" class="form-control">
+                                        <option selected>--Select--</option>
+                                        <option>5:00</option>
+                                        <option>6:00</option>
+                                        <option>7:00</option>
+                                        <option>8:00</option>
+                                        <option>9:00</option>
+                                          </select></p>
+                                    </div>
+                                   
+                                    <div class="form-group col-md-4">
+                                     <p class="reveal"> <label for="guests">Number of Guests</label>
+                                      <select id="guests" class="form-control">
+                                        <option selected>--Select--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                         </select></p>
+                                    </div>
+                                    
+                                  </div>
+
+                                  
+                                <br/>
+                                  
+                        <input type="button" value="Submit" class="reserve" style="color: black;" />
+                   </div> 
+                   <div class="confirmation">
+                    <input type="button" value="Confirm" class="button1"/>
+                    <input type="button" value="Cancel" class="button"/>
+                    </div>
+                    <h2 class="confirmA">Your confirmation is successful.</h2>
+                            </form>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="homeIcon" data-section=".home">
+                <img src="img/home.png" alt="Home" />
+                <p>Home</p>
+            </div>
+            <div class="specialsIcon" data-section=".specials">
+                <img src="img/specials.png" alt="Specials" />
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <img src="img/reservation.png" alt="Reservations" />
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    <!-- RESTAURANT 3 -->
+     <main id="rest3" class="rest">
+        <!-- header -->
+        <header>
+            <img class="hamburger" data-click-state="1" src="img/hamburger.gif" alt="Menu"/>
+			<h1 class="crispyhdr" style="float: left;" >Crispy's</h1>
+		
+            
+        </header>
+        <!-- home -->
+        <section class="home">
+            <div class="sectionContainer"><br/>
+                
+                    <img class="crispy" src="img/crispylogo.png" alt="Crispy"/>
+                
+                <!-- <h1 >Fast-Food Dining</h1><br>
+                <div class="photoAddress reveal">
+                    <img class="homeImg" src="img/crispysMain.jpeg" alt="Home"/>
+                    <h2>Crispy's</h2>
+                    <h3>1433 Woodroffe Ave<br>
+                    Nepean, ON<br/>
+                    K2G 2V5 CANADA</h3>
+                    <div class="photoCount">10 PHOTOS</div>
+                </div> -->
+                <div class="reviews reveal">
+                    <h1 style="font-weight: bold !important;">About</h1>
+                    <br>
+                    <img id="imgside3" src="img/crispymain.jpeg"/>
+		<p id="special"> Come check out our 
+delicious Crispy Fried 
+Chicken and our amazin
+g homemade Burgers! 
+And Don’t forget to try 
+out our Flavorful Philly 
+Steak Sub or one of our 
+Cheesy Poutines!
+</p>
+<br><br><h3>1433 Woodroffe Ave<br>
+    Nepean, ON<br/>
+    K2G 2V5 CANADA</h3><br>
+                <div class="hours reveal">
+                    <h2 style="color: black !important">OPENING HOURS</h2>
+                    <p  style="color: black !important"><center>Weekdays HOURS  11:00 TO 22:00
+						<br/>
+					Weekends HOURS  12:00 TO 22:00								</center></p>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+        <!-- specials -->
+        <section class="specials">
+                <div class="sectionHeading"><h1> SPECIALS </h1></div>
+                <div class="sectionArea">
+                    <div class="special01 reveal">
+                        <h2>Hot House Burger</h2>
+                        <h3>$ 10.67</h3>
+                        <img class="special01" src="images/crispy1.jpg" alt="special01" />   
+                        <p>bread, butter, Mayonnaise,Lemon juice,Pinch salt,Pepper, Red chili flakes Garlic .</p>
+                    </div>
+        
+                    <div class="special02C reveal">
+                            <h2>Crispy burger & fries </h2>
+                            <h3>$4.50</h3>
+                            <img class="special02" src="images/burger and fries.jpg" alt="special02" />   
+                            <p>cut potatoes for fries,tomato-vegetable juice, cocktail,chili powder
+                            </p>
+                    </div>
+        
+                    <div class="special03C reveal">
+                        <h2>Hot Dog</h2>
+                        <h3>$6.45</h3> 
+                        <img class="special03" src="images/hotdog.jpg" alt="special01" />   
+                        <p>ground beef,garlic,onion,an egg, barbecue sauce, salt, pepper.</p>
+                    </div>
+        
+                    <div class="special04 special04C reveal">
+                            <h2> Chicken wrap</h2>
+                            <h3>$9.99</h3><br> <br/>
+                            <img class="special04" src="images/wraps.jpeg" alt="special01" />   
+                            <p>chicken breast, lettuce,cooked-bacon, tomato,onion, sliced-avocado,shredded cheese, ranch.</p>
+                    </div>
+                
+                </div>
+            </section>
+        
+        <!-- reservations -->
+        <section class="reservations">
+            <h1>RESERVATIONS</h1>
+            <div class="sectionContainer">
+                <h2 class="reveal">Fill in the form below</h2>
+                <p class="reveal">* required</p>
+                <form style="font-family: 'Bitter', serif;">
+                        <div class="form">
+                            <div class="form-row ">
+                                
+                                <div class="col">
+                                    <p class="reveal">
+                                <label>First Name:</label>
+                                        <input type="text" class="form-control" placeholder="First name"></p>
+                                </div>
+                                
+                                <div class="col">
+                                <label class="reveal">Last Name:</label>
+
+                                <input type="text" class="reveal" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="form-row " >
+                                    <!-- <div class="form-group col-md-6">
+                                    <p class="reveal"><label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email"></p>
+                                    </div> -->
+                                    <div class="form-group col-md-6">
+                                    <p class="reveal"> <label for="inputPassword4">Phone</label>
+                                        <input type="number" class="form-control" placeholder="123456789"></p>
+                                        <p class="reveal">
+                                        <label for="date">Date</label>
+                                            <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <p class="reveal"><label for="guests">Time</label>
+                                    <select id="Time" class="form-control">
+                                        <option selected>--Select--</option>
+                                        <option>5:00</option>
+                                        <option>6:00</option>
+                                        <option>7:00</option>
+                                        <option>8:00</option>
+                                        <option>9:00</option>
+                                        </select></p>
+                                    </div>
+                                
+                                    <div class="form-group col-md-4">
+                                    <p class="reveal"> <label for="guests">Number of Guests</label>
+                                    <select id="guests" class="form-control">
+                                        <option selected>--Select--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        </select></p>
+                                    </div>
+                                    
+                                </div>
+                                <br/>
+                        <div id="submit">       
+                        <input type="button" value="Submit" class="reserve" style="color: black; font-weight: bolder;"/></div> 
+                    </div> 
+                    <div class="confirmation">
+                        <input type="button" value="Confirm" class="button1"/>
+                        <input type="button" value="Cancel" class="button"/>
+                        </div>
+                        <h2 class="confirmA">Your confirmation is successful.</h2>
+                            </form>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="homeIcon" data-section=".home">
+                <img src="img/home.png" alt="Home" />
+                <p>Home</p>
+            </div>
+            <div class="specialsIcon" data-section=".specials">
+                <img src="img/specials.png" alt="Specials" />
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <img src="img/reservation.png" alt="Reservations" />
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        // hide all main elements above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=menu, 1=splash, 2=landing, 3=rest 1, 4=rest 2, 5=rest 3
+        //$("main:gt(1)").hide();
+        
+        // hide all section elements (in the selected restaurant/main screen)
+        // above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=home, 1=specials, 2=reservations
+        //$("#rest1 section:gt(0)").hide();
+    </script>
+    
+    <!-- link to main js file -->
+    <script src="js/main.js"></script>
+</center>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D3 Charts switching</title>
+    <style>
+        body{
+            background: rgb(231, 230, 230);
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 2%;
+        }
+        h1{
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 24px;
+            margin-bottom: 1%;
+        }
+        
+        svg{
+            -webkit-box-shadow: 0px 0px 9px 10px #000; 
+            box-shadow: 0px 0px 9px 10px #000;
+            margin-top: 2%;
+        }
+        .tooltip{
+        background: var(--tooltip-background-color);
+        border: 0;
+        border-radius: 8px;
+        font-family: var(--font);
+        font-size: 14px;
+        font-weight: bold;
+        height: 35px;
+        padding: 2px;
+        pointer-events: none;
+        position: absolute;
+        text-align: center;
+        width: 150px;
+        }
+        #mainD{
+            display: flex;
+            justify-content: center;
+        }
+        #graph1{
+            background: teal;
+            color: white;
+            font-size: 12pt;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: 0.3s all;
+            outline: none;
+        }
+        #graph1:hover{
+            background: dodgerblue;
+            color: white;
+        }
+        #graph2{
+            background: teal;
+            color:white;
+            font-size: 12pt;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: 0.3s all;
+            outline: none;
+        }
+        #graph2:hover{
+            background: dodgerblue;
+            color: white;
+        }
+        #graph3{
+            background: teal;
+            color: white;
+            font-size: 12pt;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: 0.3s all;
+            outline: none;
+        }
+        #graph3:hover{
+            background: dodgerblue;
+            color: white;
+        }
+        #color1{
+            background: teal;
+            color: white;
+            font-size: 12pt;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            transition: 0.3s all;
+            outline: none;
+        }
+        #color1:hover{
+            background: cyan;
+            color: #000000;
+        }
+        #color2{
+            background: teal;
+            color:white;
+            font-size: 12pt;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: 0.3s all;
+            outline: none;
+        }
+        #color2:hover{
+            background: #FFAD1D;
+            color: #000000;
+        }
+        #mainPage{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainGraph">
+    <h1 id="heading">Fall Temprature and Precipitation of South British Columbia Mountains</h1>
+<div id="mainD">
+    <button id="graph1" value="Graph1">SOUTH BRITISH COLUMBIA MOUNTAINS</button>
+    <button id="graph2" value="Graph2">ARCTIC TUNDRA</button>
+    <!-- <button id="color1" value="Cyan" >Cyan</button>
+    <button id="color2" value="Yellow" >Yellow</button> -->
+</div>
+<div id="svgGraph"></div>
+</div>
+<legend id="mainPage" style="margin-left: 300px;height: 600px;width: 800px;background-color: rgb(185, 212, 221);color: black;border-radius: 10px; background-color: rgb(185, 212, 221); color:black; text-align: justify;">
+    <h1 id="heading" style="padding-top: 60px;">Fall Temprature and Precipitation of South British Columbia Mountains and Artic Tundra</h1>
+    <div style="padding: 5%;">
+    <h3 style="margin-top: 10px;">The only area where the average temperature exceeds the freezing point(32 degrees Fahrenheit or zero degrees Celsius) in winter is the coast of British Columbia (see Vancouver), where the climate is oceanic, cool and rainy.</h3>
+    <h1 style="margin-top: 80px;">Description:</h1>
+    <h4 >The following graph covers the weather difference of two main areas of canada namely,South British Columbia Mountains and Arctic Tundra of roughly 40 years</h4>
+    <center><button id="graph3" style="margin-top: 50px;">Show Graph</button></center>
+</div>
+    </legend>
+    <!-- <legend id="sizeintro" style="position: relative;left: 13%;"><br/>
+        <h1 class="textIntro">Departures of temperature and precipitation from normals</h1>
+        <h2 class="textIntro innerText">Frequency: Annual</h2>
+        <h2 class="textIntro innerText">Geography: Northwestern Forest in Spring(First Graph)</h2>    
+        <h2 class="textIntro innerText">Geography: Northwestern Forest in Summer(Second Graph)</h2><br/>
+        <center><h1 class="" style="color: white;">Description</h1></center><br/>
+        <h3 class="desDetail">The line graph illustrates fluctuation in Percipetation of four decades in Northwestern Forest of canada. </h3>
+        <h3 class="desDetail">The bar graph illustrates fluctuation in temperature of four decades in Northwestern Forest of canada. </h3>
+        <h3 class="desDetail">You can change the seasons by clinking on graph1 and graph2 button.  </h3>
+        <h3 class="desDetail">Graph1 shows the data of spring and Graph2 shows data of summer season. </h3>
+    
+    
+    
+    
+        <center><button class="buttonIntro" id="buttonIntro">Show Graph</button></center>
+      </legend> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js"></script>
+</body>
+</html>

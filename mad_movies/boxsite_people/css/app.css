@@ -1,0 +1,53 @@
+
+.more-top {
+    margin-top: 2.0rem;
+}
+body{
+    color: #ffffff;
+}
+
+main{
+    display: block;
+}
+
+.min-height-60{
+    min-height: 100px;
+}
+.min-height-50{
+    min-height: 50px;
+}
+
+.min-height-180{
+    min-height: 180px;
+}
+
+.min-height-540{
+    min-height: 500px;
+}
+
+.min-height-300{
+    min-height: 300px;
+}
+
+.min-height-200{
+    min-height: 200px;
+}
+
+.grey-1{
+    background-color: #333;
+}
+.grey-2{
+    background-color: #444;
+}
+
+.grey-3{
+    background-color: #555;
+}
+
+.grey-4{
+    background-color: #666;
+}
+
+
+
+
