@@ -1,5 +1,5 @@
 /* 
-	Created by - Dhrudeep shah
+	Created by - Akash Patel
 	function to generate two arrays and showing matched numbers highlighted.
 	showing the result of the lotto.
 	
